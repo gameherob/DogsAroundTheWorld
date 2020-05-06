@@ -1,0 +1,185 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Biblioteca.css">
+
+<head>
+<title>
+Dogs Around The world
+</title>
+<style>
+a:link {
+	color:black;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+  color:#990000;
+  background-color: transparent;
+  text-decoration: none;
+}
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+input[type=text] {
+  
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #8bc34a;
+}
+select {
+  width: 40%;
+  padding: 16px 20px;
+  border: 1px solid #8bc34a;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #8bc34a;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #3399FF;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body  background="test1.jpg">
+
+<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:260px" id="mySidebar">
+  <div class="w3-bar w3-light-green">
+  <span class="w3-bar-item w3-padding-20"><a href="Pagina inicial.html"  ><img src="logo.png" border="0" width="170" height="170"></a></span>
+  <button onclick="w3_close()"
+  class="w3-bar-item w3-button w3-right w3-padding-20" title="close Sidebar">&times;</button>
+  </div>
+  <div class="w3-bar-block w3-small">
+  <p align="center" style="color:#000000; font-size:215%">Países:</p>
+  
+  
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="Segunda Pagina.html">Reino Unido</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="decima.html">França</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="sexta.html">Alemanha</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="catorze.html">Croácia</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="25.html">Brasil</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="23.html">Espanha</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="quarta.html">Itália</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="18.html">Rússia</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="doze.html">Portugal</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="onze.html">China</a>
+  <a style="color:#000000; font-size:175%; font-family:Times New Roman" class="w3-bar-item w3-button w3-hover-theme-l3" href="treze.html">Japão</a>
+  
+  </div>
+</div>
+
+<div id="main" style="margin-left:290px">
+
+<div class="w3-container w3-display-container ">
+  <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge w3-theme" onclick="w3_open()">&#9776;</span>
+</div>
+
+<div class="w3-container">
+<p align="center">
+<img align="center" src="formulario.png" width="810" height="150">
+</p>
+
+
+
+<form>
+  <label style="color:#8bc34a;font-family:Bahnschrift SemiBold; font-size:150%"  >Nome</label>
+  <input type="text" id="fname" name="fname" >&emsp;&emsp;&emsp;
+  <label style="color:#8bc34a;font-family:Bahnschrift SemiBold; font-size:150%">Apelido</label>
+  <input type="text" id="lname" name="lname" ><br><br>
+  <input class="w3-radio" type="radio" name="genero" value="homem" checked >
+  <label>Homem</label></p>
+  <p>
+  <input class="w3-radio" type="radio" name="genero" value="mulher">
+  <label>Mulher</label></p><br>
+  <p style="color:#8bc34a; font-family:Bahnschrift SemiBold; font-size:150%" ">Escolha a sua raça favorita!</p>
+  <select>
+  <option >Golden Retriever</option>
+  <option >Beagle</option>
+  <option >Bulmastiffe</option>
+  <option >Bulterrier</option>
+  <option >Poodle</option>
+  <option >Basset Hound</option>
+  <option >Bloodhound</option>
+  <option >Papillon</option>
+  <option >Pastor-Alemão</option>
+  <option >Dobermann</option>
+  <option >Rottweiler</option>
+  <option >Dálmata</option>
+  <option >Pastor-Croata</option>
+  <option >Sabujo de Posavac</option>
+  <option >Fila Brasileiro</option>
+  <option >Veadeiro Pampeano</option>
+  <option >Cão Sertanejo</option>
+  <option >Alano Espanhol</option>
+  <option >Dogue Canário</option>
+  <option >Perdigueiro de Burgos</option>
+  <option >Cane Corso</option>
+  <option >Mastim Napolitano</option>
+  <option >Galguinho Italiano</option>
+  <option >Husky</option>
+  <option >Laika</option>
+  <option >Samoyed</option>
+  <option >Perdigueiro português</option>
+  <option >Cão da Serra da Estrela</option>
+  <option >Cão de água português</option>
+  <option >Chow-Chow</option>
+  <option >Cão de Crista Chinês</option>
+  <option >Pug</option>
+  <option >Akita Inu</option>
+  <option >Shiba inu</option>
+  <option >Shikoku inu</option>
+  </select> <br><br>
+  <p style="color:#8bc34a; font-family:Bahnschrift SemiBold; font-size:150%" > Mas Porquê?</p>
+  <textarea> Escreva aqui...</textarea><br><br>
+  <input class="w3-btn w3-ripple w3-theme" type="submit" value="Enviar">
+</form>
+
+  
+</div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "290px";
+  document.getElementById("mySidebar").style.width = "290px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+
+
+
+</BODY>
+
+</html>
